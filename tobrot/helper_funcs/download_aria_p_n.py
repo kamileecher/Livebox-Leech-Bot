@@ -285,10 +285,10 @@ async def call_apropriate_function(
                     message_to_send += "\n"
                 if message_to_send != "":
                     mention_req_user = (
-                        f"<b><a href='tg://user?id={user_id}'>📁 Your Requested Files</a></b>\n\n"
+                        f"<b><a href='tg://user?id={user_id}'>📁 Yuklenen Dosyalar </a></b>\n\n"
                     )
                     message_to_send = mention_req_user + message_to_send
-                    message_to_send = message_to_send + "\n\n" + "#uploaded\n\n<b>💫 Powered By : @kamileecher1</b>"
+                    message_to_send = message_to_send + "\n\n" + "#yuklendi\n\n<b>💫 Admin : @kamileecher1</b>"
                 else:
                     message_to_send = "<i>FAILED</i> to upload files. 😞😞"
                 await user_message.reply_text(
