@@ -22,7 +22,7 @@ logging.basicConfig(
     datefmt="%d-%b-%y %H:%M:%S",
     handlers=[
         RotatingFileHandler(
-            "Torrentleech-Gdrive.txt", maxBytes=50000000, backupCount=10
+            "LOG.txt", maxBytes=50000000, backupCount=10
         ),
         logging.StreamHandler(),
     ],
